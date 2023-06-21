@@ -1,0 +1,10 @@
+.container-fluid{
+    background-color: rgb(60, 114, 148);
+    padding: 10px;
+}
+.nav-item .nav-link{
+    color: white;
+}
+.nav-item a:hover{
+    color: goldenrod;
+}

@@ -2,25 +2,20 @@
 import './App.css';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
-import Hello from "./components/Index";
-import SectionFaq from "./components/Faq";
-import User from "./components/Userprofile";
-import ImportantNotice from "./components/props";
+import Navbar from "./components/navbar/Index.js";
+import {BrowserRouter as router , Switch, Route,} from "react-router-dom";
+import Home from './components/home/Home';
+import Employ from './components/Employ/Employ';
 
 
 function App() {
   return (
     <>
+      
       <div className="App">
-        <Hello></Hello>
-        <ImportantNotice notice="The Bistro will be closed after 8PM everyday"></ImportantNotice>
-        <div className="d-flex">
-          <User name="Piyush" lastname="Vyas" Location="Jodhpur" description="FrontEnd Web Developer Intern"></User>
-          <User name="Mohan" lastname="Singh " Location="Jodhpur" description="FullStack Web Developer"></User>
-          <User name="Ankit" lastname="Goyal" Location="Jodhpur" description="FullStack Web Developer"></User>
-        </div>
-        
-        <SectionFaq></SectionFaq>
+      <Navbar></Navbar>
+      <Home></Home>
+      <Employ></Employ>
       </div>
     </>
   );
